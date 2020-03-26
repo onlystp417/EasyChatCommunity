@@ -1,0 +1,102 @@
+body {
+  background: #F5F5F5;
+}
+
+button:active, input {
+  outline: none;
+  border: none;
+}
+
+.communit-board {
+  border-radius: 5px;
+  box-shadow: 0px 2px 7px #00000029;
+  overflow: hidden;
+  margin-bottom: 30px;
+  background: #fff;
+}
+
+.add-post button {
+  background: #b8e4e6;
+  font-size: 14px;
+  color: #fff;
+}
+
+.add-post header {
+  background: #000;
+}
+
+.communit-board header {
+  background: #e7ed77;
+}
+
+.main textarea {
+  outline: 0;
+  width: 100%;
+  border:0;
+}
+
+.communit-board header p {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.communit-board header time {
+  font-size: 16px;
+  color: #888;
+}
+
+.text-comment {
+  background: #eef0df;
+  border: 1px solid #a9ad82;
+  width: 100%;
+  border-radius: 99999px;
+  outline: 0;
+}
+
+.comments-item {
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.stamp-counter {
+  color: #6bd0d4;
+}
+
+.stamp, .add-comment {
+  outline: none;
+  border: none;
+}
+
+.interaction span {
+  color: #6bd0d4;
+}
+
+.comments-item h5 {
+  font-size: 16px;
+}
+
+.comments-item p {
+  font-size: 14px;
+}
+
+.comments-item button {
+  cursor: pointer;
+  border: 0px;
+  background: inherit;
+  outline: 0;
+}
+
+.comments-item button, .comments-item time {
+  font-size: 12px;
+  color: #888;
+}
+
+.comments-item button:hover {
+  color: #6bd0d4;
+}
+
+/* #e3df2c */
+/* #6bd0d4 */
+
+.disapear {
+  display: none;
+}

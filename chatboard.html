@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Easy Chat</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="./chat.css">
+</head>
+
+<body>
+  <header class="bg-warning row no-gutters align-items-center py-3 px-5">
+    <div class="col-8">
+      <img class="d-inline-block align-middle mr-4" src="./image/forum.png" height="70px" width="70px" alt="">
+      <h1 class="d-inline-block align-middle">Easy Chat</h1>
+    </div>
+    <div class="log-out col-4 text-right">
+      <a href="./index.html"><img class="mr-2 align-middle" width="30px" height="30px" src="./image/logout.png"
+          alt=""><span class="align-middle text-dark">登出</span></a>
+    </div>
+  </header>
+  <main class="container communitArea pt-5">
+    <!-- add post -->
+    <article class="communit-board add-post">
+      <header class="p-3">
+        <p class="user m-0">Jinwen</p>
+      </header>
+      <div class="px-3">
+        <section class="main">
+          <textarea value="5566" id="postContent" class="py-3" name="" id="" cols="30" rows="1"
+            placeholder="分享些什麼..."></textarea>
+          <p class="disapear"></p>
+        </section>
+      </div>
+      <button type="button" id="addPostBtn" class="d-block w-100 border-0 text-center py-1">發表</button>
+    </article>
+
+    <!-- post without comments -->
+    <!-- <article class="communit-board">
+      <header class="p-3">
+        <p class="user m-0">xxxxTim</p>
+        <time>hh:mm:ss</time>
+      </header>
+      <div class="px-3">
+        <section class="main">
+          <p class="py-3">今天有沒有要出巡？</p>
+        </section>
+        <hr class="my-2">
+        <div>
+          <img class="d-inline-block align-middle" width="20px" height="20px" src="./image/liked.png" alt="">
+          <span class="stamp-counter d-inline-block align-middle">487</span>
+        </div>
+        <hr>
+        <div class="interaction row no-gutters">
+          <button class="stamp col-6 border-0">
+            <div class="stamp-unlike">
+              <img width="20px" height="20px" src="./image/like_none.png" alt="">
+              <span>讚</span>
+            </div>
+            <div class="stamp-like disapear">
+              <img width="20px" height="20px" src="./image/liked.png" alt="">
+              <span>收回讚</span>
+            </div>
+          </button>
+          <button class="add-comment col-6 border-0">
+            <img width="20px" height="20px" src="./image/comment.png" alt="">
+            <span>留言</span>
+          </button>
+        </div>
+        <hr class="my-2">
+        <textarea class="text-comment bg-black-50 px-4 py-2" name="" id="" cols="30" rows="1"
+          placeholder="留言..."></textarea>
+        <section class="comments p-3">
+          <div class="comments-item py-2">
+            <h5 class="m-0">name</h5>
+            <p class="m-0">comment</p>
+            <button class="p-0">回覆</button>
+            <time>3分鐘</time>
+          </div>
+          <div class="comments-recursive-item pl-5 py-2">
+            <h5 class="m-0">name</h5>
+            <p class="m-0">comment</p>
+            <button class="p-0 border-0">回覆</button>
+            <time>1分鐘</time>
+          </div>
+        </section>
+      </div>
+    </article> -->
+
+    <!-- post with comments -->
+    <!-- <article class="communit-board">
+      <header class="p-3">
+        <p class="user m-0">Yachen</p>
+        <time>hh:mm:ss</time>
+      </header>
+      <div class="px-3">
+        <section class="main">
+          <p class="py-3">鎮守漚汪ing...</p>
+        </section>
+        <hr class="my-2">
+        <div>
+          <img class="d-inline-block align-middle" width="20px" height="20px" src="./image/liked.png" alt="">
+          <span class="stamp-counter d-inline-block align-middle">1234</span>
+        </div>
+        <hr>
+        <div class="interaction row no-gutters">
+          <button class="stamp col-6 border-0">
+            <img width="20px" height="20px" src="./image/like_none.png" alt="">
+            <span>讚</span>
+          </button>
+          <button class="add-comment col-6 border-0">
+            <img width="20px" height="20px" src="./image/comment.png" alt="">
+            <span>留言</span>
+          </button>
+        </div>
+        <hr class="my-2">
+        <textarea class="text-comment bg-black-50 px-4 py-2" name="" id="textCommet" cols="30" rows="1"
+          placeholder="留言..."></textarea>
+        <section class="comments p-3">
+          <div class="comments-item py-2">
+            <h5 class="m-0">草民</h5>
+            <p class="m-0">保庇 m(_ _)m</p>
+            <button class="p-0">回覆</button>
+            <time>3分鐘</time>
+          </div>
+          <textarea class="text-comment bg-black-50 px-4 py-2 mt-2" name="" id="" cols="30" rows="1"
+            placeholder="留言..."></textarea>
+          <div class="comments-item pl-5 py-2">
+            <h5 class="m-0">xxxxTim</h5>
+            <p class="m-0">啥米時遵要控窯啦？</p>
+            <time>1分鐘</time>
+          </div>
+        </section>
+      </div>
+    </article> -->
+  </main>
+  <!-- javascript -->
+  <script src="./board.js"></script>
+</body>
+
+</html>
