@@ -1,9 +1,9 @@
 // api url
-const signUpUrl = 'http://34.80.201.121/api/signup';
-const loginUrl = 'http://34.80.201.121/api/login';
-const addPost = 'http://34.80.201.121/api/storePost';
+const signUpUrl = 'https://34.80.201.121/api/signup';
+const loginUrl = 'https://34.80.201.121/api/login';
+const addPost = 'https://34.80.201.121/api/storePost';
 // const loadPost = 'http://34.80.201.121/api/api/board';
-const baseUrl = 'http://5e7b2f690e04630016332eb8.mockapi.io/api';
+const baseUrl = 'https://5e7b2f690e04630016332eb8.mockapi.io/api';
 
 
 // 取得 input 節點

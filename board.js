@@ -1,5 +1,5 @@
 // api url
-const baseUrl = 'http://34.80.201.121/api';
+const baseUrl = 'https://34.80.201.121/api';
 
 // 取得 cookie 值（name / user_id / api_token / created_at）
 function getCookieValues(prop) {
@@ -187,10 +187,11 @@ window.addEventListener('keypress', addComment);
 function addComment(e) {
 
   // 選取到 input 節點
-  let textComment = document.querySelector('.text-comment');
   let keyCode = e.keyCode;
   if (keyCode != 13) return;
   let postId = e.target.getAttribute('data-postId');
+  console.log(`.text-comment[data-postId=${postId}]`)
+  let textComment = document.querySelector(`.text-comment[data-postId='${postId}']`);
 
   fetch(`${baseUrl}/storeComment`, {
     method: 'POST',
