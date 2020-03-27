@@ -1,5 +1,5 @@
 // api url
-const baseUrl = 'https://34.80.201.121/api';
+const baseUrl = `${window.location.protocol}//200850ff.ngrok.io/api`;
 
 // 取得 cookie 值（name / user_id / api_token / created_at）
 function getCookieValues(prop) {

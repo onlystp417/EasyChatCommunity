@@ -1,9 +1,6 @@
 // api url
-const signUpUrl = 'https://34.80.201.121/api/signup';
-const loginUrl = 'https://34.80.201.121/api/login';
-const addPost = 'https://34.80.201.121/api/storePost';
-// const loadPost = 'http://34.80.201.121/api/api/board';
-const baseUrl = 'https://5e7b2f690e04630016332eb8.mockapi.io/api';
+const baseUrl = `${window.location.protocol}//200850ff.ngrok.io/api`;
+
 
 
 // 取得 input 節點
@@ -20,7 +17,7 @@ signUpBtn.addEventListener('click', function (e) {
   e.preventDefault();
   console.log(account.value);
   console.log(password.value);
-  fetch(signUpUrl, {
+  fetch(`${baseUrl}/signup`, {
     method: 'POST',
     mode: 'cors',
     headers: {
@@ -52,7 +49,7 @@ loginBtn.addEventListener('click', function (e) {
   e.preventDefault();
   console.log(account.value);
   console.log(password.value);
-  fetch(loginUrl, {
+  fetch(`${baseUrl}/login`, {
     body: JSON.stringify({
       name: account.value,
       password: password.value
